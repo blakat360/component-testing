@@ -1,0 +1,48 @@
+.logoMobile {
+    grid-row: 1;
+    grid-column: 1 / 6;
+    position: relative;
+    justify-content: start;
+    align-content: start;
+    justify-self: stretch;
+    align-items: stretch;
+    padding-top: 3vw;
+    border-style: var(--border-style);
+    border-color: var(--border-color);
+}
+.buttonContainerMobile {
+    grid-row: 1;
+    grid-column: 7 / 10;
+    position: relative;
+    justify-items: stretch;
+    justify-self: end;
+    align-items: stretch;
+    padding-top: 2vw;
+    padding-right: 1vw;
+    border-style: var(--border-style);
+    border-color: var(--border-color);
+}
+.logoDesktop {
+    grid-row: 1;
+    grid-column: 1 / 6;
+    position: relative;
+    justify-content: stretch;
+    align-content: start;
+    justify-items: start;
+    align-items: start;
+    border-style: var(--border-style);
+    border-color: var(--border-color);
+}
+.buttonContainerDesktop {
+    grid-row: 1;
+    grid-column: 7 / 9;
+    position: relative;
+    justify-content: center;
+    align-content: start;
+    justify-items: start;
+    align-items: start;
+    padding: 1vw 5vw;
+    border-style: var(--border-style);
+    border-color: var(--border-color);
+}
+

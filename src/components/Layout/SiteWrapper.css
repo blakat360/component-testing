@@ -1,0 +1,101 @@
+.sitewrapper {
+    display: grid;
+    position: relative;
+    grid-template-columns: 5vw 90vw 5vw;
+    grid-auto-rows: auto auto auto auto auto auto;
+    color: var(--primary-text);
+    font-family: var(--font);
+    border-style: var(--border-style);
+    border-color: var(--border-color);
+  }
+.headerrow {
+    display: grid;
+    grid-row: 1;
+    grid-column: 2;
+    grid-template-columns: repeat(9, 10vw);
+    grid-template-rows: auto;
+    position: relative;
+    justify-content: center;
+    justify-self: stretch;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    border-style: var(--border-style);
+    border-color: var(--border-color);
+} 
+.row1 {
+    display: grid;
+    grid-row: 2;
+    grid-column: 2;
+    grid-template-columns: repeat(9, 10vw);
+    grid-template-rows: auto;
+    position: relative;
+    justify-content: stretch;
+    justify-self: stretch;
+    align-content: center;
+    justify-items: stretch;
+    align-items: center;
+    border-style: var(--border-style);
+    border-color: var(--border-color);
+} 
+.row2 {
+    display: grid;
+    grid-row: 3;
+    grid-column: 2;
+    grid-template-columns: repeat(9, 10vw);
+    grid-template-rows: auto;
+    position: relative;
+    justify-content: stretch;
+    justify-self: stretch;
+    align-content: center;
+    justify-items: stretch;
+    align-items: center;
+    border-style: var(--border-style);
+    border-color: var(--border-color);
+} 
+.row3 {
+    display: grid;
+    grid-row: 4;
+    grid-column: 2;
+    grid-template-columns: repeat(9, 10vw);
+    grid-template-rows: auto;
+    position: relative;
+    justify-content: stretch;
+    justify-self: stretch;
+    align-content: center;
+    justify-items: stretch;
+    align-items: center;
+    border-style: var(--border-style);
+    border-color: var(--border-color);
+} 
+.row4 {
+    display: grid;
+    grid-row: 5;
+    grid-column: 2;
+    grid-template-columns: repeat(9, 10vw);
+    grid-template-rows: auto;
+    position: relative;
+    justify-content: stretch;
+    justify-self: stretch;
+    align-content: center;
+    justify-items: stretch;
+    align-items: center;
+    border-style: var(--border-style);
+    border-color: var(--border-color);
+} 
+.footerrow {
+    display: grid;
+    grid-row: 6;
+    grid-column: 2;
+    grid-template-columns: repeat(9, 10vw);
+    grid-template-rows: auto;
+    position: relative;
+    justify-content: center;
+    justify-self: stretch;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    border-style: var(--border-style);
+    border-color: var(--border-color);
+} 
+

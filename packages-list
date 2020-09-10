@@ -1,0 +1,6 @@
+npm install --save react-particles-js
+npm install --save @loadable/component
+npm install --save @material-ui/core
+npm install --save react-chartjs-2 chart.js
+ 
+ 

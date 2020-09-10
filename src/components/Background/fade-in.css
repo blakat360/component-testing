@@ -1,0 +1,32 @@
+.fadeIn {
+    animation: fadeInAnimation ease var(--animate);
+    -webkit-animation: fadeInAnimation ease var(--animate);
+    -moz-animation: fadeInAnimation ease var(--animate);
+    -o-animation: fadeInAnimation ease var(--animate);
+    -ms-animation: fadeInAnimation ease var(--animate);
+    animation-iteration-count: 1;
+    }
+    @keyframes fadeInAnimation {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-moz-keyframes fadeInAnimation {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-webkit-keyframes fadeInAnimation {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-o-keyframes fadeInAnimation {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-ms-keyframes fadeInAnimation {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }

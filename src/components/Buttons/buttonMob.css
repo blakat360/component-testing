@@ -1,0 +1,17 @@
+ .buttonmob {
+    color: var(--primary-text);
+    border: 1px solid;
+    border-color: white;
+    border-radius: 3px;
+    padding: 3px 15px;
+    font-size: 2.2vw;
+    font-family: var(--font);
+    text-align: center;
+    display: inline-block;
+    z-index: 1;
+    background-color: var(--primary-color);
+    transition-duration: 0.4s;
+ }
+.buttonmob:hover {
+    background-color: var(--primary-color-light);
+    }
