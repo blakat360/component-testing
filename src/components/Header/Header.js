@@ -46,10 +46,9 @@ Headermob.defaultProps = {
 }
 
 const HeaderDesktop = ({ siteTitle }) => (
-    <div>
-    <header class="headercontainer">
+    <header class="headerrow">
       <div class="logoDesktop">
-        <img src={logo} width="1000vw" href="/index/" alt="Logo"></img>
+        <img src={logo} width="450vw" href="/index/" alt="Logo"></img>
         <h1 style={{ margin: 0 }}>
         </h1>
       </div>
@@ -59,7 +58,6 @@ const HeaderDesktop = ({ siteTitle }) => (
         </OutboundLink>
       </div>
     </header>
-    </div>
   )
   
   HeaderDesktop.propTypes = {
