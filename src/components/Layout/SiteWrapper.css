@@ -61,14 +61,14 @@
 } 
 .row1 {
     display: grid;
-    position: absolute;
+    position: relative;
     grid-row: 2;
     grid-column: 2;
     grid-template-columns: 90vw;
-    grid-template-rows: var(--row1);
+    grid-template-rows: calc(var(--row1-h1) + var(--row1-h2) + var(--row1-h3) + var(--row1-h4) + var(--row1-h5));
     position: relative;
     border-style: var(--border-style);
-    border-color: white;
+    border-color: red;
 } 
 .row2 {
     display: grid;
@@ -90,7 +90,7 @@
     grid-row: 4;
     grid-column: 2;
     grid-template-columns: 90vw;
-    grid-template-rows: var(--row3);
+    grid-template-rows: calc(var(--row3-h1) + var(--row3-h2) + var(--row3-h3) + var(--row3-h4) + var(--row3-h5));
     position: relative;
     justify-content: center;
     justify-self: stretch;
@@ -105,7 +105,7 @@
     grid-row: 5;
     grid-column: 2;
     grid-template-columns: repeat(9, 10vw);
-    grid-template-rows: var(--row4);
+    grid-template-rows: calc(var(--row4-h1) + var(--row4-h2) + var(--row4-h3) + var(--row4-h4) + var(--row4-h5));
     position: relative;
     justify-content: stretch;
     justify-self: stretch;
@@ -120,7 +120,7 @@
     grid-row: 6;
     grid-column: 2;
     grid-template-columns: repeat(9, 10vw);
-    grid-template-rows: var(--row5);
+    grid-template-rows: calc(var(--row5-h1) + var(--row5-h2) + var(--row5-h3) + var(--row5-h4) + var(--row5-h5));
     position: relative;
     justify-content: stretch;
     justify-self: stretch;

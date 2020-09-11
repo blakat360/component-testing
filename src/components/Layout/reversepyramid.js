@@ -1,51 +1,59 @@
 import React from "react";
-import "./reversepyramid.css";
+import "./reverse-pyramid.css";
 import "../Layout/SiteWrapper.css";
+import TripleColumn from "./triplecolumn";
+import DoubleColumn from "./doublecolumn";
 
-// This component needs the following defining: pyramidR1Height, pyramidR2Height, pyramidRow1, pyramidRow2
-// The rows that can be defined are --row1, --row2, --row3, --row4, --row5, these all have sub dimensions in the style: --row1-h1
+// Rows still need defining
 
-function reversePyramid(props) {
-    let heightVar1 = props.pyramidR1Height;
-    let heightVar2 = props.pyramidR2Height;
-    let pyramidRowNo1 = props.pyramidRow1;
-    let pyramidRowNo2 = props.pyramidRow2;
+function ReversePyramid(props) {
+    let heightVar1 = props.pyramidtop;
+    let heightVar2 = props.pyramidbottom;
+    let pyramidRowNo1 = props.pyramidrow1no;
+    let pyramidRowNo2 = props.pyramidrow2no;
     document.documentElement.style.setProperty(String(pyramidRowNo1), heightVar1);
     document.documentElement.style.setProperty(String(pyramidRowNo2), heightVar2);
     document.documentElement.style.setProperty("--pyramidRow1", heightVar1);
     document.documentElement.style.setProperty("--pyramidRow2", heightVar2);
     return(
         <div class="reversepyramid">
-            <div class='revPyramidTopLeft'>
-                <img src={props.imgtopleft} alt={props.imgtopleftalt} height={props.imgtopleftheight}></img>
-                <h2>{props.toplefttitle}</h2>
-                <h3>{props.topleft}</h3>  
+            <div class="revPyramidTopRow">
+                <TripleColumn 
+                    tripleColumn1Height={props.pyramidrow1h}
+                    tripleColumn1Row=""
+                    tripleColumn2Height={props.pyramidrow2h}
+                    tripleColumn2Row=""
+                    imgtopleft={props.imgtopleft}
+                    topleft={props.topleft}
+                    toplefttitle={props.toplefttitle}
+                    imgtopleftheight={props.imgtopleftheight}
+                    imgtopmid={props.imgtopmid}
+                    imgtopmidheight={props.imgtopleftheight}
+                    topmid={props.topmid}
+                    topmidtitle={props.topmidtitle}
+                    topright={props.topright}
+                    toprighttitle={props.toprighttitle}
+                    imgtopright={props.imgtopright}
+                    imgtoprightheight={props.imgtoprightheight}
+                />
             </div>
-            <div class='revPyramidTopMid'>
-                <img src={props.imgtopmid} alt={props.imgtopmidalt} height={props.imgtopmidheight}></img>
-                <h2>{props.topmidtitle}</h2>
-                <h3>{props.topmid}</h3>
+            <div class="revPyramidBottomRow">
+            <DoubleColumn 
+                doubleColumn1Height={props.pyramidrow3h}
+                doubleColumn1Row=""
+                doubleColumn2Height={props.pyramidrow4h}
+                doubleColumn2Row=""
+                imgtopleft={props.imgbottomleft}
+                topleft={props.bottomleft}
+                toplefttitle={props.bottomlefttitle}
+                imgtopleftheight={props.imgbottomleftheight}
+                topright={props.bottomright}
+                toprighttitle={props.bottomrighttitle}
+                imgtopright={props.imgbottomright}
+                imgtoprightheight={props.imgbottomrightheight}
+                />
             </div>
-            <div class='revPyramidTopRight'>
-                <img src={props.imgtopright} alt={props.imgtoprightalt} height={props.imgtoprightheight}></img>
-                <h2>{props.toprighttitle}</h2>
-                <h3>{props.topright}</h3>  
-            </div>
-            <div class='revPyramidBottomLeft'>
-                <img src={props.imgbottomleft} alt={props.imgbottomleftalt} height={props.imgbottomleftheight}></img>
-                <h2>{props.bottomlefttitle}</h2>
-                <h3>{props.bottomleft}</h3>
-            </div>
-            <div class='revPyramidBottomRight'>
-                <img src={props.imgbottomright} alt={props.imgbottomrightalt} height={props.imgbottomrightheight}></img>
-                <h2>{props.bottomrighttitle}</h2>
-                <h3>{props.bottomright}</h3>
-            </div>
-        </div>
-
+      </div>
     );
-    
 }
-
-export default reversePyramid;
-  
+export default ReversePyramid;
