@@ -1,11 +1,14 @@
 For the reverse-pyramid component the following props are required:
 
+<ReversePyramid
     pyramidrow1h=""
     pyramidrow1no=""
     pyramidrow2h=""
     pyramidrow2no=""
     pyramidrow3h=""
     pyramidrow4h=""
+    pyramidtop=""
+    pyramidbottom=""
     imgtopleft=""
     topleft=""
     toplefttitle=""
@@ -26,13 +29,15 @@ For the reverse-pyramid component the following props are required:
     bottomrighttitle=""
     imgbottomright=""
     imgbottomrightheight=""
+/>
 
 For the triple column component the following props are required:
 
-    tripleColumn1Height=""
-    tripleColumn1Row=""
-    tripleColumn2Height=""
-    tripleColumn2Row=""
+<TripleColumn
+    triplecolumn1height=""
+    triplecolumn1row=""
+    triplecolumn2height=""
+    triplecolumn2row=""
     imgtopleft=""
     topleft=""
     toplefttitle=""
@@ -45,3 +50,21 @@ For the triple column component the following props are required:
     toprighttitle=""
     imgtopright=""
     imgtoprightheight=""
+/>
+
+For the double column component the following props are required:
+
+ <DoubleColumn 
+    doublecolumn1height=""
+    doublecolumn1row=""
+    doublecolumn2height=""
+    doublecolumn2row=""
+    imgtopleft=""
+    topleft=""
+    toplefttitle=""
+    imgtopleftheight=""
+    topright=""
+    toprighttitle=""
+    imgtopright=""
+    imgtoprightheight=""
+/>

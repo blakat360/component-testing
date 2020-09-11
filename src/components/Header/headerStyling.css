@@ -1,18 +1,18 @@
 .logoMobile {
     grid-row: 1;
-    grid-column: 1 / 6;
+    grid-column: 1 / 1;
     position: relative;
     justify-content: start;
     align-content: start;
-    justify-self: stretch;
-    align-items: stretch;
+    justify-self: start;
+    align-items: start;
     padding-top: 3vw;
     border-style: var(--border-style);
     border-color: var(--border-color);
 }
 .buttonContainerMobile {
     grid-row: 1;
-    grid-column: 7 / 10;
+    grid-column: 2 / 2;
     position: relative;
     justify-items: stretch;
     justify-self: end;
@@ -24,24 +24,26 @@
 }
 .logoDesktop {
     grid-row: 1;
-    grid-column: 1 / 6;
+    grid-column: 1 / 1;
     position: relative;
     justify-content: start;
+    justify-self: start;
     align-content: start;
     justify-items: start;
     align-items: start;
+    padding-top: 1vw;
     border-style: none;
     border-color: var(--border-color);
 }
 .buttonContainerDesktop {
     grid-row: 1;
-    grid-column: 7 / 10;
+    grid-column: 2 / 2;
     position: relative;
-    justify-content: center;
+    justify-self: end;
     align-content: start;
     justify-items: start;
     align-items: start;
-    padding: 1vw 5vw;
+    padding: 1vw 1vw;
     border-style: var(--border-style);
     border-color: var(--border-color);
 }

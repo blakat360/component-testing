@@ -6,17 +6,17 @@ import "../Layout/videocontainer.css";
 // The rows that can be defined are --row1, --row2, --row3, --row4, --row5, these all have sub dimensions in the style: --row1-h1
 
 function VideoContainer(props) {
-    let vidHeightVar = props.videoHeight;
-    let vidRow = props.videoRow;
+    let vidHeightVar = props.rowheight;
+    let vidRow = props.videorow;
     document.documentElement.style.setProperty(String(vidRow), vidHeightVar);
     return(
         <div class="videoContainerGrid">
             <div class="videoContainer">
             <iframe 
-                title={props.videoTitle}
+                title={props.videotitle}
                 src={props.videoURL} 
-                width={props.videoWidth}
-                height={props.videoHeight}
+                width={props.videowidth}
+                height={props.videoheight}
                 frameborder="0" 
                 allow="autoplay; fullscreen" 
                 allowfullscreen>

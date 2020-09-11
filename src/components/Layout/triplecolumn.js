@@ -6,10 +6,10 @@ import "../Layout/SiteWrapper.css";
 // The rows that can be defined are --row1, --row2, --row3, --row4, --row5, these all have sub dimensions in the style: --row1-h1
 
 function TripleColumn(props) {
-    let heightVar1 = props.tripleColumn1Height;
-    let heightVar2 = props.tripleColumn2Height;
-    let tripleColumnRowNo1 = props.tripleColumn1Row;
-    let tripleColumnRowNo2 = props.tripleColumn2Row;
+    let heightVar1 = props.triplecolumn1height;
+    let heightVar2 = props.triplecolumn2height;
+    let tripleColumnRowNo1 = props.triplecolumn1row;
+    let tripleColumnRowNo2 = props.triplecolumn2row;
     document.documentElement.style.setProperty(String(tripleColumnRowNo1), heightVar1);
     document.documentElement.style.setProperty(String(tripleColumnRowNo2), heightVar2);
     document.documentElement.style.setProperty("--tripleColumnH1", heightVar1);

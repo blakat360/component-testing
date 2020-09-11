@@ -16,8 +16,8 @@
     grid-column: 2 / 8;
     position: relative;
     justify-content: center;
-    align-content: center;
-    align-items: center;
+    align-content: start;
+    align-items: start;
     justify-items: stretch;
     text-align: center;
     margin-top: var(--margintop);

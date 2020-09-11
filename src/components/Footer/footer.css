@@ -1,11 +1,13 @@
 .footer {
-    grid-row: 6;
+    grid-row: 1 / 1;
     grid-column: 1 / 10;
     position: relative;
     justify-items: center;
     justify-self: center;
     justify-content: center;
-    align-items: stretch;
+    align-self: end;
+    align-content: end;
+    align-items: end;
     border-style: var(--border-style);
     border-color: var(--border-color);
 } 

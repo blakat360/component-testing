@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 
 export default function MainFooter(props) {
     return(
-    <div class="footer">
+    <div>
           © {new Date().getFullYear()} 
           <Link href={props.homepageLink}> {props.companyName}</Link>
     </div>

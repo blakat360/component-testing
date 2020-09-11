@@ -37,7 +37,7 @@
     display: grid;
     position: relative;
     grid-template-columns: 5vw 90vw 5vw;
-    grid-auto-rows: auto auto auto auto auto auto auto;
+    grid-auto-rows: auto auto auto auto auto auto;
     color: var(--primary-text);
     font-family: var(--font);
     border-style: var(--border-style);
@@ -48,13 +48,12 @@
     display: grid;
     grid-row: 1;
     grid-column: 2;
-    grid-template-columns: repeat(9, 10vw);
+    grid-template-columns: 55vw 35vw;
     grid-template-rows: auto;
     position: relative;
     justify-content: center;
     justify-self: stretch;
     align-content: center;
-    justify-items: center;
     align-items: center;
     border-style: var(--border-style);
     border-color: var(--border-color);
@@ -75,7 +74,7 @@
     grid-row: 3;
     grid-column: 2;
     grid-template-columns: 90vw;
-    grid-template-rows: var(--row2);
+    grid-template-rows: calc(var(--row2-h1) + var(--row2-h2) + var(--row2-h3) + var(--row2-h4) + var(--row2-h5));
     position: relative;
     justify-content: stretch;
     justify-self: stretch;
@@ -132,16 +131,17 @@
 } 
 .footerrow {
     display: grid;
-    grid-row: 6;
+    grid-row: 6 / 6;
     grid-column: 2;
-    grid-template-columns: repeat(9, 10vw);
+    grid-template-columns: 90vw;
     grid-template-rows: auto;
     position: relative;
     justify-content: center;
     justify-self: stretch;
-    align-content: center;
+    align-content: end;
     justify-items: center;
-    align-items: center;
+    align-items: end;
+    align-self: end;
     border-style: var(--border-style);
     border-color: var(--border-color);
 } 
