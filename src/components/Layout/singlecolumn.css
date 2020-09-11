@@ -1,12 +1,16 @@
 :root {
     --margintop: 1vw;
     --borderstyle: var(--border-style);
+    --singlecolumnh1: "";
+    --singlecolumnh2: "";
+    --singlecolumnh3: "";
+    --singlecolumnh4: "";
 }
 .singleColumn {
     display: grid;
-    position: absolute;
-    grid-template-columns: repeat(8, 11.25vw);
-    grid-template-rows: 20vw;
+    position: relative;
+    grid-template-columns: 90vw;
+    grid-template-rows: var(--singlecolumnh1) var(--singlecolumnh2) var(--singlecolumnh3) var(--singlecolumnh4);
     justify-content: center;
     justify-self: center;
     align-content: start;
@@ -17,8 +21,8 @@
 } 
 .firstRow {
     grid-row: 1;
-    grid-column: 1 / 9;
-    position: absolute;
+    grid-column: 1 / 1;
+    position: relative;
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -31,8 +35,8 @@
 }
 .secondRow {
     grid-row: 2;
-    grid-column: 1 / 9;
-    position: absolute;
+    grid-column: 1 / 1;
+    position: relative;
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -45,8 +49,8 @@
 }
 .thirdRow {
     grid-row: 3;
-    grid-column: 1 / 9;
-    position: absolute;
+    grid-column: 1 / 1;
+    position: relative;
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -59,8 +63,8 @@
 } 
 .fourthRow {
     grid-row: 4;
-    grid-column: 1 / 9;
-    position: absolute;
+    grid-column: 1 / 1;
+    position: relative;
     justify-content: center;
     align-content: center;
     align-items: center;

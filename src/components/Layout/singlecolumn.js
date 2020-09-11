@@ -6,9 +6,17 @@ import "../Layout/SiteWrapper.css";
 // The rows that can be defined are --row1, --row2, --row3, --row4, --row5, these all have sub dimensions in the style: --row1-h1
 
 function singlecolumn(props) {
-    let heightVar = props.singleColumnHeight;
+    let heightVar = props.singlecolumnrowh;
+    let heightVar1 = props.singlecolumn1height;
+    let heightVar2 = props.singlecolumn2height;
+    let heightVar3 = props.singlecolumn3height;
+    let heightVar4 = props.singlecolumn4height;
     let singleColumnRow = props.singleColumnRow;
     document.documentElement.style.setProperty(String(singleColumnRow), heightVar);
+    document.documentElement.style.setProperty("--singlecolumnh1", heightVar1);
+    document.documentElement.style.setProperty("--singlecolumnh2", heightVar2);
+    document.documentElement.style.setProperty("--singlecolumnh3", heightVar3);
+    document.documentElement.style.setProperty("--singlecolumnh4", heightVar4);
     return(
         <div class="singleColumn">
             <div class='firstRow'>

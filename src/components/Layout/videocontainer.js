@@ -9,6 +9,7 @@ function VideoContainer(props) {
     let vidHeightVar = props.rowheight;
     let vidRow = props.videorow;
     document.documentElement.style.setProperty(String(vidRow), vidHeightVar);
+    document.documentElement.style.setProperty("--videorowheight", vidHeightVar);
     return(
         <div class="videoContainerGrid">
             <div class="videoContainer">

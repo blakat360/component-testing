@@ -1,8 +1,11 @@
+:root {
+    --videorowheight: "";
+}
  .videoContainerGrid {
     display: grid;
     position: absolute;
     grid-template-columns: repeat(8, 11.25vw);
-    grid-template-rows: var(--row3);
+    grid-template-rows: var(--videorowheight);
     justify-content: center;
     justify-self: center;
     align-content: start;
