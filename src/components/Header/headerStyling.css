@@ -3,8 +3,9 @@
     grid-column: 1 / 1;
     position: relative;
     justify-content: start;
-    align-content: start;
     justify-self: start;
+    align-content: start;
+    justify-items: start;
     align-items: start;
     padding-top: 3vw;
     border-style: var(--border-style);
@@ -14,9 +15,10 @@
     grid-row: 1;
     grid-column: 2 / 2;
     position: relative;
-    justify-items: stretch;
     justify-self: end;
-    align-items: stretch;
+    align-content: start;
+    justify-items: start;
+    align-items: start;
     padding-top: 2vw;
     padding-right: 1vw;
     border-style: var(--border-style);

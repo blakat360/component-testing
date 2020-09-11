@@ -65,17 +65,21 @@
     grid-column: 2;
     grid-template-columns: 90vw;
     grid-template-rows: calc(var(--row1-h1) + var(--row1-h2) + var(--row1-h3) + var(--row1-h4) + var(--row1-h5));
-    position: relative;
-    border-style: var(--border-style);
+    justify-content: stretch;
+    justify-self: stretch;
+    align-content: start;
+    justify-items: stretch;
+    align-items: start;
+    border-style: solid;
     border-color: red;
 } 
 .row2 {
     display: grid;
+    position: relative;
     grid-row: 3;
     grid-column: 2;
     grid-template-columns: 90vw;
     grid-template-rows: calc(var(--row2-h1) + var(--row2-h2) + var(--row2-h3) + var(--row2-h4) + var(--row2-h5));
-    position: relative;
     justify-content: stretch;
     justify-self: stretch;
     align-content: start;

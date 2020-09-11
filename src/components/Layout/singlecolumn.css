@@ -1,5 +1,5 @@
 :root {
-    --margintop: 1vw;
+    --margintop: 0vw;
     --borderstyle: var(--border-style);
     --singlecolumnh1: "";
     --singlecolumnh2: "";
@@ -20,7 +20,7 @@
     border-color: var(--border-color);
 } 
 .firstRow {
-    grid-row: 1;
+    grid-row: 1 / 1;
     grid-column: 1 / 1;
     position: relative;
     justify-content: center;
@@ -34,7 +34,7 @@
     border-color: var(--border-color);
 }
 .secondRow {
-    grid-row: 2;
+    grid-row: 2 / 2;
     grid-column: 1 / 1;
     position: relative;
     justify-content: center;
@@ -48,7 +48,7 @@
     border-color: var(--border-color);
 }
 .thirdRow {
-    grid-row: 3;
+    grid-row: 3 / 3;
     grid-column: 1 / 1;
     position: relative;
     justify-content: center;
@@ -62,7 +62,7 @@
     border-color: var(--border-color);
 } 
 .fourthRow {
-    grid-row: 4;
+    grid-row: 4 / 4;
     grid-column: 1 / 1;
     position: relative;
     justify-content: center;
