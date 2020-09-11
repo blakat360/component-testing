@@ -13,6 +13,12 @@
   --font-heavy: Ripple-heavy;
   --animate: 8s;
   --button-border-color: white;
+  --mobile-heading: 5.5vw;
+  --mobile-body: 2.5vw;
+  --mobile-heading-weight: 800;
+  --desktop-heading: 3vw;
+  --desktop-body: 1.5vw;
+  --desktop-heading-weight: 800;
 }
 html {
   -ms-text-size-adjust: 100%;

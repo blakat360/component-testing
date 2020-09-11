@@ -19,6 +19,8 @@ function ReversePyramid(props) {
         <div class="reversepyramid">
             <div class="revPyramidTopRow">
                 <TripleColumn 
+                    headings={props.headings}
+                    bodytext={props.bodytext}
                     triplecolumn1height={props.pyramidrow1h}
                     triplecolumn1row=""
                     triplecolumn2height={props.pyramidrow2h}
@@ -39,6 +41,8 @@ function ReversePyramid(props) {
             </div>
             <div class="revPyramidBottomRow">
             <DoubleColumn 
+                headings={props.headings}
+                bodytext={props.bodytext}
                 doublecolumn1height={props.pyramidrow3h}
                 doublecolumn1row=""
                 doublecolumn2height={props.pyramidrow4h}

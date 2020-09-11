@@ -4,6 +4,8 @@ import fadeIn from './fade-in.css';
 
 let particlesCanvas = {
     position: 'fixed',
+    top: 0,
+    left: 0,
     width: '100%',
     height: '100%',
     zIndex: '-1',
@@ -13,7 +15,7 @@ const ParticlesBackground = ({ children }) => {
     return (
         <div class={fadeIn}>
         <div style={particlesCanvas}>
-        <Particles height={'100%'} params={{
+        <Particles height={'100vh'} params={{
             "particles": {
                 "number": {
                     "value": 200,

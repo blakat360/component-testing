@@ -26,6 +26,8 @@ const DesktopPage = () => (
     </div>
     <div class="row2">
       <TripleColumn 
+        headings="desktopTextHeading"
+        bodytext="desktopTextBody"
         triplecolumn1height="30vh"
         triplecolumn1row="--row2-h1"
         triplecolumn2height="40vh"
@@ -46,6 +48,8 @@ const DesktopPage = () => (
     </div>
     <div class="row3">
     <ReversePyramid 
+        headings="desktopTextHeading"
+        bodytext="desktopTextBody"
         pyramidrow1h="30vh"
         pyramidrow1no="--row3-h1"
         pyramidrow2h="40vh"

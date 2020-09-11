@@ -4,6 +4,38 @@
     --tripleColumnH1: "";
     --tripleColumnH2: "";
 }
+.mobileTextHeading {
+    color: var(--primary-text);
+    font-family: var(--font);
+    font-weight: var(--mobile-heading-weight);
+    text-rendering: optimizeLegibility;
+    font-size: var(--mobile-heading);
+    line-height: 1.1;
+}
+.mobileTextBody {
+    color: var(--primary-text);
+    font-family: var(--font);
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    font-size: var(--mobile-body);
+    line-height: 1.1;
+}
+.desktopTextHeading {
+    color: var(--primary-text);
+    font-family: var(--font);
+    font-weight: var(--desktop-heading-weight);
+    text-rendering: optimizeLegibility;
+    font-size: var(--desktop-heading);
+    line-height: 1.1;
+}
+.desktopTextBody {
+    color: var(--primary-text);
+    font-family: var(--font);
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    font-size: var(--desktop-body);
+    line-height: 1.1;
+}
 .tripleColumn {
     display: grid;
     position: relative;

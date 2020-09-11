@@ -4,13 +4,14 @@
     border-color: white;
     border-radius: 3px;
     padding: 3px 15px;
-    font-size: 2.2vw;
+    font-size: 2.2vh;
     font-family: var(--font);
     text-align: center;
     display: inline-block;
     z-index: 1;
     background-color: var(--primary-color);
     transition-duration: 0.4s;
+    margin-top: -1vh;
  }
 .buttonmob:hover {
     background-color: var(--primary-color-light);
