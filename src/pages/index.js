@@ -45,6 +45,8 @@ const IndexPage = () => (
     </div>
     <div class="row2">
       <TripleColumn 
+        tripleColumnHeight="60vh"
+        tripleColumnRow="--row2"
         imgtopleft={speed} 
         topleft="Using AR technology the system instructs the user, whilst verifying each step to ensure perfection."
         toplefttitle="Increase production speed and efficiency"
@@ -60,7 +62,7 @@ const IndexPage = () => (
       />
     </div>
     <div class="row3">
-      <VideoContainer videoURL="https://player.vimeo.com/video/51863131" videoWidth="1280" videoHeight="800px" videoTitle="Alt-J - Fitzpleasure"/> 
+      <VideoContainer videoRow="--row3" videoURL="https://player.vimeo.com/video/51863131" videoWidth="1280" videoHeight="800px" videoTitle="Alt-J - Fitzpleasure"/> 
     </div>
     <div class="footerrow">
       <MainFooter homepageLink="www.mesmerix.co.uk" companyName="Mesmerix"/>

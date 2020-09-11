@@ -4,7 +4,8 @@ import "../Layout/videocontainer.css";
 
 function VideoContainer(props) {
     let vidHeightVar = props.videoHeight;
-    document.documentElement.style.setProperty('--row3', vidHeightVar);
+    let vidRow = props.videoRow;
+    document.documentElement.style.setProperty(String(vidRow), vidHeightVar);
     return(
         <div class="videoContainerGrid">
             <div class="videoContainer">

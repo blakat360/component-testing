@@ -2,48 +2,42 @@
 /* The root variables mean that the sizing of each component within each row can be adjusted from a single file and used wherever needed.  */
 /* Any variable from row 1 that is used must be added to the calc for its sum, 0 values must be removed from this as it causes issues. */
 :root {
-    --row1-h1: 30vw;
-    --row1-h2: 15vw;
-    --row1-h3: 0;
-    --row1-h4: 0;
-    --row1-h5: 0;
-    --row1: calc(var(--row1-h1) + var(--row1-h2));
-    --row1m-h1: 30vw;
-    --row1m-h2: 15vw;
-    --row1m-h3: 0;
-    --row1m-h4: 0;
-    --row1m-h5: 0;
-    --row1m: calc(var(--row1m-h1) + var(--row1m-h2));
-    --row2-h1: 30vw;
-    --row2-h2: 0;
-    --row2-h3: 0;
-    --row2-h4: 0;
-    --row2-h5: 0;
-    --row2: var(--row2-h1);
-    --row2m-h1: 0;
-    --row2m-h2: 0;
-    --row2m-h3: 0;
-    --row2m-h4: 0;
-    --row2m-h5: 0;
-    --row2m: calc(var(--row2m-h1) + var(--row2m-h2));
-    --row3-h1: 850px;
-    --row3-h2: 0;
-    --row3-h3: 0;
-    --row3-h4: 0;
-    --row3-h5: 0;
-    --row3: var(--row3-h1);
-    --row3m-h1: 0;
-    --row3m-h2: 0;
-    --row3m-h3: 0;
-    --row3m-h4: 0;
-    --row3m-h5: 0;
-    --row3m: calc(var(--row3m-h1) + var(--row3m-h2));
+    --row1-h1: 60vh;
+    --row1-h2: 30vh;
+    --row1-h3: 0vh;
+    --row1-h4: 0vh;
+    --row1-h5: 0vh;
+    --row1: calc(var(--row1-h1) + var(--row1-h2) + var(--row1-h3) + var(--row1-h4) + var(--row1-h5));
+    --row2-h1: 30vh;
+    --row2-h2: 1vh;
+    --row2-h3: 0vh;
+    --row2-h4: 0vh;
+    --row2-h5: 0vh;
+    --row2: calc(var(--row2-h1) + var(--row2-h2) + var(--row2-h3) + var(--row2-h4) + var(--row2-h5));
+    --row3-h1: 0vh;
+    --row3-h2: 0vh;
+    --row3-h3: 0vh;
+    --row3-h4: 0vh;
+    --row3-h5: 0vh;
+    --row3: calc(var(--row3-h1) + var(--row3-h2) + var(--row3-h3) + var(--row3-h4) + var(--row3-h5));
+    --row4-h1: 0vh;
+    --row4-h2: 0vh;
+    --row4-h3: 0vh;
+    --row4-h4: 0vh;
+    --row4-h5: 0vh;
+    --row4: calc(var(--row4-h1) + var(--row4-h2) + var(--row4-h3) + var(--row4-h4) + var(--row4-h5));
+    --row5-h1: 0vh;
+    --row5-h2: 0vh;
+    --row5-h3: 0vh;
+    --row5-h4: 0vh;
+    --row5-h5: 0vh;
+    --row5: calc(var(--row5-h1) + var(--row5-h2) + var(--row5-h3) + var(--row5-h4) + var(--row5-h5));
 }
 .sitewrapper {
     display: grid;
     position: relative;
     grid-template-columns: 5vw 90vw 5vw;
-    grid-auto-rows: auto auto auto auto auto auto;
+    grid-auto-rows: auto auto auto auto auto auto auto;
     color: var(--primary-text);
     font-family: var(--font);
     border-style: var(--border-style);
@@ -103,7 +97,7 @@
     align-content: start;
     justify-items: stretch;
     align-items: center;
-    border-style: var(--border-style);
+    border-style: solid;
     border-color: var(--border-color);
 } 
 .row4 {
@@ -111,7 +105,22 @@
     grid-row: 5;
     grid-column: 2;
     grid-template-columns: repeat(9, 10vw);
-    grid-template-rows: auto;
+    grid-template-rows: var(--row4);
+    position: relative;
+    justify-content: stretch;
+    justify-self: stretch;
+    align-content: center;
+    justify-items: stretch;
+    align-items: center;
+    border-style: var(--border-style);
+    border-color: var(--border-color);
+} 
+.row5 {
+    display: grid;
+    grid-row: 6;
+    grid-column: 2;
+    grid-template-columns: repeat(9, 10vw);
+    grid-template-rows: var(--row5);
     position: relative;
     justify-content: stretch;
     justify-self: stretch;

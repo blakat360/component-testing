@@ -2,8 +2,12 @@ import React from "react";
 import "./singlecolumn.css";
 import "../Layout/SiteWrapper.css";
 
-function singlecolumn(props) {
+// The following additional props are needed to use this: singleColumnHeight, singleColumnRow (eg. --row3)
 
+function singlecolumn(props) {
+    let heightVar = props.singleColumnHeight;
+    let singleColumnRow = props.singleColumnRow;
+    document.documentElement.style.setProperty(String(singleColumnRow), heightVar);
     return(
         <div class="singleColumn">
             <div class='firstRow'>
