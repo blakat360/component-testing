@@ -9,7 +9,7 @@ import "../components/Layout/SiteWrapper.css";
 import humanerror from "../images/humanerror.png";
 import MainFooter from "../components/Footer/footer";
 import TripleColumn from "../components/Layout/triplecolumn";
-import ReversePyramid from "../components/Layout/reversepyramid";
+import ReversePyramid from "../components/Layout/reverse-pyramid";
 import VideoContainer from "../components/Layout/videocontainer";
 import ParticlesBackground from "../components/Background/particles-background";
 
@@ -22,12 +22,14 @@ const IndexPage = () => (
     <Header siteTitle="Mesmerix"/>
 
     <div class="row1">
-      <ReversePyramid 
-      pyramidR1Height="60vh"
-      pyramidR2Height="30vh"
-      pyramidRow1="--row1-h1"
-      pyramidRow2="--row1-h2"
-      imgtopleft={speed} 
+      {/* <ReversePyramid 
+      pyramidrow1h="20vh"
+      pyramidrow1no="--row1-h1"
+      pyramidrow2h="40vh"
+      pyramidrow2no="--row1-h2"
+      pyramidrow3h="20vh"
+      pyramidrow4h="40vh"
+      imgtopleft={speed}
       topleft="Using AR technology the system instructs the user, whilst verifying each step to ensure perfection."
       toplefttitle="Increase production speed and efficiency"
       imgtopleftheight="50vw"
@@ -45,7 +47,13 @@ const IndexPage = () => (
       bottomright="At Mesmerix, we have created a technique to eliminate this
       cost, using a combination of augmented reality and machine
       vision to perfect the art of machine verification."      
-      />
+      imgbottomleft=""
+      bottomlefttitle="Human Error"
+      imgbottomleftheight=""
+      bottomrighttitle="Mesmerix"
+      imgbottomright=""
+      imgbottomrightheight=""
+      /> */}
     </div>
     <div class="row2">
       <TripleColumn 
