@@ -2,14 +2,14 @@
 /* The root variables mean that the sizing of each component within each row can be adjusted from a single file and used wherever needed.  */
 /* Any variable from row 1 that is used must be added to the calc for its sum, 0 values must be removed from this as it causes issues. */
 :root {
-    --row1-h1: 60vh;
-    --row1-h2: 30vh;
+    --row1-h1: 0vh;
+    --row1-h2: 0vh;
     --row1-h3: 0vh;
     --row1-h4: 0vh;
     --row1-h5: 0vh;
     --row1: calc(var(--row1-h1) + var(--row1-h2) + var(--row1-h3) + var(--row1-h4) + var(--row1-h5));
-    --row2-h1: 30vh;
-    --row2-h2: 1vh;
+    --row2-h1: 0vh;
+    --row2-h2: 0vh;
     --row2-h3: 0vh;
     --row2-h4: 0vh;
     --row2-h5: 0vh;
@@ -97,7 +97,7 @@
     align-content: start;
     justify-items: stretch;
     align-items: center;
-    border-style: solid;
+    border-style: var(--border-style);
     border-color: var(--border-color);
 } 
 .row4 {

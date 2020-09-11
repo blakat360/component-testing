@@ -6,6 +6,6 @@
     justify-self: center;
     justify-content: center;
     align-items: stretch;
-    border-style: solid;
+    border-style: var(--border-style);
     border-color: var(--border-color);
 } 

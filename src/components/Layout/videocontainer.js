@@ -1,6 +1,9 @@
 import React from "react";
+import "../Layout/SiteWrapper.css";
 import "../Layout/videocontainer.css";
 
+// The following additional props are needed to use this: videoHeight, videoRow (eg. --row3)
+// The rows that can be defined are --row1, --row2, --row3, --row4, --row5, these all have sub dimensions in the style: --row1-h1
 
 function VideoContainer(props) {
     let vidHeightVar = props.videoHeight;
@@ -18,12 +21,6 @@ function VideoContainer(props) {
                 allow="autoplay; fullscreen" 
                 allowfullscreen>
             </iframe>
-            <p>
-                <a href="https://vimeo.com/51863131">Alt-J -  Tesselate</a> 
-                from 
-                <a href="https://vimeo.com/mautztastaton">Mautz &amp; Tastaton</a> 
-                on 
-                <a href="https://vimeo.com">Vimeo</a>.</p>
             </div>
         </div>
     );

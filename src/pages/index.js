@@ -23,6 +23,10 @@ const IndexPage = () => (
 
     <div class="row1">
       <ReversePyramid 
+      pyramidR1Height="60vh"
+      pyramidR2Height="30vh"
+      pyramidRow1="--row1-h1"
+      pyramidRow2="--row1-h2"
       imgtopleft={speed} 
       topleft="Using AR technology the system instructs the user, whilst verifying each step to ensure perfection."
       toplefttitle="Increase production speed and efficiency"
@@ -45,8 +49,10 @@ const IndexPage = () => (
     </div>
     <div class="row2">
       <TripleColumn 
-        tripleColumnHeight="60vh"
-        tripleColumnRow="--row2"
+        tripleColumn1Height="30vh"
+        tripleColumn1Row="--row2-h1"
+        tripleColumn2Height="30vh"
+        tripleColumn2Row="--row2h2"
         imgtopleft={speed} 
         topleft="Using AR technology the system instructs the user, whilst verifying each step to ensure perfection."
         toplefttitle="Increase production speed and efficiency"
@@ -72,15 +78,3 @@ const IndexPage = () => (
 )
 
 export default IndexPage
-
-// <Layout>
-// <div class="row2">
-// <SEO title="Home" />
-// <Link href="http://localhost:8000/page-2/"><button className="buttonmob">Hello</button></Link>
-// <h1>Hi people</h1>
-// <p>Welcome to your new Gatsby site.</p>
-// <p>Now go build something great.</p>
-// <Link to="/page-2/">Go to page 2</Link> <br />
-// <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-// </div>
-// </Layout>

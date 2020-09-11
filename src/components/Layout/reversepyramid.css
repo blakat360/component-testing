@@ -1,12 +1,13 @@
 :root {
     --margintop: 1vw;
-    --borderstyle: none;
+    --pyramidRow1: "";
+    --pyramidRow2: "";
 }
 .reversepyramid {
     display: grid;
     position: absolute;
     grid-template-columns: repeat(8, 11.25vw);
-    grid-template-rows: var(--row1-h1) var(--row1-h2);
+    grid-template-rows: var(--pyramidRow1) var(--pyramidRow2);
     justify-content: center;
     justify-self: center;
     align-content: start;
@@ -66,6 +67,7 @@
     align-items: center;
     justify-items: stretch;
     text-align: center;
+    margin-left: 2.5vw;
     margin-top: var(--margintop);
     color: var(--primary-text);
     border-style: var(--borderstyle);
@@ -80,6 +82,7 @@
     align-items: center;
     justify-items: stretch;
     text-align: center;
+    margin-right: 2.5vw;
     margin-top: var(--margintop);
     color: var(--primary-text);
     border-style: var(--borderstyle);

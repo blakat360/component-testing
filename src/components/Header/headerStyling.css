@@ -30,7 +30,7 @@
     align-content: start;
     justify-items: start;
     align-items: start;
-    border-style: solid;
+    border-style: none;
     border-color: var(--border-color);
 }
 .buttonContainerDesktop {

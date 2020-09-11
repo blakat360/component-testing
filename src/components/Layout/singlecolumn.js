@@ -3,6 +3,7 @@ import "./singlecolumn.css";
 import "../Layout/SiteWrapper.css";
 
 // The following additional props are needed to use this: singleColumnHeight, singleColumnRow (eg. --row3)
+// The rows that can be defined are --row1, --row2, --row3, --row4, --row5, these all have sub dimensions in the style: --row1-h1
 
 function singlecolumn(props) {
     let heightVar = props.singleColumnHeight;

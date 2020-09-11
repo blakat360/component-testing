@@ -2,8 +2,18 @@ import React from "react";
 import "./reversepyramid.css";
 import "../Layout/SiteWrapper.css";
 
-function reversePyramid(props) {
+// This component needs the following defining: pyramidR1Height, pyramidR2Height, pyramidRow1, pyramidRow2
+// The rows that can be defined are --row1, --row2, --row3, --row4, --row5, these all have sub dimensions in the style: --row1-h1
 
+function reversePyramid(props) {
+    let heightVar1 = props.pyramidR1Height;
+    let heightVar2 = props.pyramidR2Height;
+    let pyramidRowNo1 = props.pyramidRow1;
+    let pyramidRowNo2 = props.pyramidRow2;
+    document.documentElement.style.setProperty(String(pyramidRowNo1), heightVar1);
+    document.documentElement.style.setProperty(String(pyramidRowNo2), heightVar2);
+    document.documentElement.style.setProperty("--pyramidRow1", heightVar1);
+    document.documentElement.style.setProperty("--pyramidRow2", heightVar2);
     return(
         <div class="reversepyramid">
             <div class='revPyramidTopLeft'>
