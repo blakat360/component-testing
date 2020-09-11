@@ -1,0 +1,27 @@
+ .videoContainerGrid {
+    display: grid;
+    position: absolute;
+    grid-template-columns: repeat(8, 11.25vw);
+    grid-template-rows: var(--row3);
+    justify-content: center;
+    justify-self: center;
+    align-content: start;
+    justify-items: center;
+    align-items: start;
+    border-style: var(--borderstyle);
+    border-color: var(--border-color);
+} 
+.videoContainer {
+    grid-row: 1;
+    grid-column: 2 / 8;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: stretch;
+    text-align: center;
+    margin-top: var(--margintop);
+    color: var(--primary-text);
+    border-style: var(--border-style);
+    border-color: var(--border-color);
+}
