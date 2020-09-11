@@ -1,0 +1,46 @@
+:root {
+    --margintop: 1vw;
+    --pyramidRow1: "";
+    --pyramidRow2: "";
+}
+.reversepyramid {
+    display: grid;
+    position: absolute;
+    grid-template-columns: 90vw;
+    grid-template-rows: var(--pyramidRow1) var(--pyramidRow2);
+    justify-content: center;
+    justify-self: center;
+    align-content: start;
+    justify-items: center;
+    align-items: start;
+    border-style: var(--borderstyle);
+    border-color: var(--border-color);
+} 
+.revPyramidTopRow {
+    grid-row: 1 / 1;
+    grid-column: 1 / 1;
+    position: absolute;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: stretch;
+    text-align: center;
+    margin-top: var(--margintop);
+    color: var(--primary-text);
+    border-style: var(--borderstyle);
+    border-color: var(--border-color);
+}
+.revPyramidBottomRow {
+    grid-row: 2 / 2;
+    grid-column: 1 / 1;
+    position: absolute;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: stretch;
+    text-align: center;
+    margin-top: var(--margintop);
+    color: var(--primary-text);
+    border-style: var(--borderstyle);
+    border-color: var(--border-color);
+}
