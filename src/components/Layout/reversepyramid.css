@@ -1,12 +1,12 @@
 :root {
     --margintop: 1vw;
-    --borderstyle: solid;
+    --borderstyle: none;
 }
 .reversepyramid {
     display: grid;
     position: absolute;
     grid-template-columns: repeat(8, 11.25vw);
-    grid-template-rows: 35vh 20vh;
+    grid-template-rows: var(--row1-h1) var(--row1-h2);
     justify-content: center;
     justify-self: center;
     align-content: start;
