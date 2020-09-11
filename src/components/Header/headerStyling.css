@@ -26,11 +26,11 @@
     grid-row: 1;
     grid-column: 1 / 6;
     position: relative;
-    justify-content: stretch;
+    justify-content: start;
     align-content: start;
     justify-items: start;
     align-items: start;
-    border-style: var(--border-style);
+    border-style: solid;
     border-color: var(--border-color);
 }
 .buttonContainerDesktop {

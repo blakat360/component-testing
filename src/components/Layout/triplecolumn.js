@@ -1,7 +1,7 @@
 import React from "react";
 import "./triplecolumn.css";
 import "../Layout/SiteWrapper.css";
-
+parentDiv = pDoc.parentNode;
 function threecolumn(props) {
 
     return(
@@ -21,6 +21,7 @@ function threecolumn(props) {
                 <h2>{props.toprighttitle}</h2>
                 <h3>{props.topright}</h3>  
             </div>
+            <h1>{parentDiv}</h1>
         </div>
     );
     

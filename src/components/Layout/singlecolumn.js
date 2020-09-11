@@ -2,29 +2,34 @@ import React from "react";
 import "./singlecolumn.css";
 import "../Layout/SiteWrapper.css";
 
-function threecolumn(props) {
+function singlecolumn(props) {
 
     return(
         <div class="singleColumn">
-            <div class='topLeft'>
-                <img src={props.imgtopleft} alt={props.imgtopleftalt} height={props.imgtopleftheight}></img>
-                <h2>{props.toplefttitle}</h2>
-                <h3>{props.topleft}</h3>  
+            <div class='firstRow'>
+                <img src={props.imgfirstRow} alt={props.imgfirstRowalt} height={props.imgfirstRowheight}></img>
+                <h2>{props.firstRowtitle}</h2>
+                <h3>{props.firstRow}</h3>  
             </div>
-            <div class='topMid'>
-                <img src={props.imgtopmid} alt={props.imgtopmidalt} height={props.imgtopmidheight}></img>
-                <h2>{props.topmidtitle}</h2>
-                <h3>{props.topmid}</h3>
+            <div class='secondRow'>
+                <img src={props.imgsecondRow} alt={props.imgsecondRowalt} height={props.imgsecondRowheight}></img>
+                <h2>{props.secondRowtitle}</h2>
+                <h3>{props.secondRow}</h3>
             </div>
-            <div class='topRight'>
-                <img src={props.imgtopright} alt={props.imgtoprightalt} height={props.imgtoprightheight}></img>
-                <h2>{props.toprighttitle}</h2>
-                <h3>{props.topright}</h3>  
+            <div class='thirdRow'>
+                <img src={props.imgthirdRow} alt={props.imgthirdRowalt} height={props.imgthirdRowheight}></img>
+                <h2>{props.thirdRowtitle}</h2>
+                <h3>{props.thirdRow}</h3>  
+            </div>
+            <div class='fourthRow'>
+                <img src={props.imgfourthRow} alt={props.imgfourthRowalt} height={props.imgfourthRowheight}></img>
+                <h2>{props.fourthRowtitle}</h2>
+                <h3>{props.fourthRow}</h3>  
             </div>
         </div>
     );
     
 }
 
-export default threecolumn;
+export default singlecolumn;
  
