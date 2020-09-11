@@ -1,1 +1,59 @@
- 
+:root {
+    --margintop: 1vw;
+    --borderstyle: var(--border-style);
+}
+.tripleColumn {
+    display: grid;
+    position: absolute;
+    grid-template-columns: repeat(8, 11.25vw);
+    grid-template-rows: 20vw;
+    justify-content: center;
+    justify-self: center;
+    align-content: start;
+    justify-items: center;
+    align-items: start;
+    border-style: var(--borderstyle);
+    border-color: var(--border-color);
+} 
+.topLeft {
+    grid-row: 1;
+    grid-column: 1 / 3;
+    position: absolute;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: stretch;
+    text-align: center;
+    margin-top: var(--margintop);
+    color: var(--primary-text);
+    border-style: var(--borderstyle);
+    border-color: var(--border-color);
+}
+.topRight {
+    grid-row: 1;
+    grid-column: 7 / 9;
+    position: absolute;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: stretch;
+    text-align: center;
+    margin-top: var(--margintop);
+    color: var(--primary-text);
+    border-style: var(--borderstyle);
+    border-color: var(--border-color);
+}
+.topMid {
+    grid-row: 1;
+    grid-column: 4 / 6;
+    position: absolute;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: stretch;
+    text-align: center;
+    margin-top: var(--margintop);
+    color: var(--primary-text);
+    border-style: var(--borderstyle);
+    border-color: var(--border-color);
+} 
