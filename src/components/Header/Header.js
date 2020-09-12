@@ -25,7 +25,7 @@ Preferred Meeting Medium:
 `)
 
 const Headermob = ({ siteTitle }) => (
-  <header class="headerrow">
+  <header class="headerRow">
     <div class="logoMobile">
       <img src={logo} width="450vw" href="/index/" alt="Logo"></img>
     </div>
@@ -46,7 +46,7 @@ Headermob.defaultProps = {
 }
 
 const HeaderDesktop = ({ siteTitle }) => (
-    <header class="headerrow">
+    <header class="headerRow">
       <div class="logoDesktop">
         <img src={logo} width="450vw" href="/index/" alt="Logo"></img>
         <h1 style={{ margin: 0 }}>

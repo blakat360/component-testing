@@ -84,8 +84,8 @@ const DesktopPage = () => (
         imgbottomrightheight=""
       />
     </div>
-    <div class="footerrow">
-      <MainFooter homepageLink="www.mesmerix.co.uk" companyName="Mesmerix"/>
+    <div class="footerRow">
+      <MainFooter homepagelink="www.mesmerix.co.uk" companyname="Mesmerix"/>
     </div>
 
   </div>

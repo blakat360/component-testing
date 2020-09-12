@@ -16,15 +16,15 @@ import ParticlesBackground from "../components/Background/particles-background";
 
 const Header = loadable(() => import("../components/Header/Header.js"))
 
-const DesktopPage = () => (
+const MobilePage = () => (
   <div class="sitewrapper">
 
     <ParticlesBackground/>
     <Header siteTitle="Mesmerix"/>
 
-    {/* <div class="row1">
-        <VideoContainer videorow="--row1-h1" videoURL="https://player.vimeo.com/video/51863131" videowidth="1280" videoheight="350vh" rowheight="50vw" videotitle="Alt-J - Fitzpleasure"/> 
-    </div> */}
+    <div class="row1">
+        <VideoContainer videorow="--row1-h1" videoURL="https://player.vimeo.com/video/51863131" videowidth="1280" videoheight="210vh" rowheight="50vw" videotitle="Alt-J - Fitzpleasure"/> 
+    </div>
     <div class="row2">
     <SingleColumn
         headings="mobileTextHeading"
@@ -50,11 +50,11 @@ const DesktopPage = () => (
         />
       
     </div>
-    <div class="footerrow">
-      <MainFooter homepageLink="www.mesmerix.co.uk" companyName="Mesmerix"/>
+    <div class="footerRow">
+      <MainFooter homepagelink="www.mesmerix.co.uk" companyname="Mesmerix"/>
     </div>
 
   </div>
 )
 
-export default DesktopPage;
+export default MobilePage;

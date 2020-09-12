@@ -1,6 +1,7 @@
 import React from "react";
 import "./triplecolumn.css";
 import "../Layout/SiteWrapper.css";
+import "../layout.css"
 
 // The following additional props are needed to use this: tripleColumnHeight1, tripleColumnRow1 (eg. --row3)
 // The rows that can be defined are --row1, --row2, --row3, --row4, --row5, these all have sub dimensions in the style: --row1-h1

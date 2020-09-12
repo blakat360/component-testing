@@ -6,7 +6,7 @@ export default function MainFooter(props) {
     return(
     <div>
           © {new Date().getFullYear()} 
-          <Link href={props.homepageLink}> {props.companyName}</Link>
+          <Link href={props.homepagelink}> {props.companyname}</Link>
     </div>
     )
 }

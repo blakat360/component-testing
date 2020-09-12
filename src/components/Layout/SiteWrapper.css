@@ -33,7 +33,7 @@
     --row5-h5: 0vh;
     --row5: calc(var(--row5-h1) + var(--row5-h2) + var(--row5-h3) + var(--row5-h4) + var(--row5-h5));
 }
-.sitewrapper {
+.siteWrapper {
     display: grid;
     position: relative;
     grid-template-columns: 5vw 90vw 5vw;
@@ -44,7 +44,7 @@
     border-color: var(--border-color);
   }
 
-.headerrow {
+.headerRow {
     display: grid;
     grid-row: 1;
     grid-column: 2;
@@ -65,12 +65,12 @@
     grid-column: 2;
     grid-template-columns: 90vw;
     grid-template-rows: calc(var(--row1-h1) + var(--row1-h2) + var(--row1-h3) + var(--row1-h4) + var(--row1-h5));
-    justify-content: stretch;
+    justify-content: center;
     justify-self: stretch;
     align-content: start;
     justify-items: stretch;
     align-items: start;
-    border-style: solid;
+    border-style: var(--border-style);
     border-color: red;
 } 
 .row2 {
@@ -80,7 +80,7 @@
     grid-column: 2;
     grid-template-columns: 90vw;
     grid-template-rows: calc(var(--row2-h1) + var(--row2-h2) + var(--row2-h3) + var(--row2-h4) + var(--row2-h5));
-    justify-content: stretch;
+    justify-content: center;
     justify-self: stretch;
     align-content: start;
     justify-items: stretch;
@@ -110,7 +110,7 @@
     grid-template-columns: repeat(9, 10vw);
     grid-template-rows: calc(var(--row4-h1) + var(--row4-h2) + var(--row4-h3) + var(--row4-h4) + var(--row4-h5));
     position: relative;
-    justify-content: stretch;
+    justify-content: center;
     justify-self: stretch;
     align-content: center;
     justify-items: stretch;
@@ -125,7 +125,7 @@
     grid-template-columns: repeat(9, 10vw);
     grid-template-rows: calc(var(--row5-h1) + var(--row5-h2) + var(--row5-h3) + var(--row5-h4) + var(--row5-h5));
     position: relative;
-    justify-content: stretch;
+    justify-content: center;
     justify-self: stretch;
     align-content: center;
     justify-items: stretch;
@@ -133,7 +133,7 @@
     border-style: var(--border-style);
     border-color: var(--border-color);
 } 
-.footerrow {
+.footerRow {
     display: grid;
     grid-row: 6 / 6;
     grid-column: 2;

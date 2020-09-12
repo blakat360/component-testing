@@ -1,3 +1,4 @@
+import "../layout.css"
 import React from "react";
 import "./doublecolumn.css";
 import "../Layout/SiteWrapper.css";
