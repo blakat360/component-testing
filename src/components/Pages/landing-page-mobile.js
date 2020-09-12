@@ -1,21 +1,21 @@
 import React from "react";
 import { Link } from "gatsby";
-import "../components/layout.css";
-import SEO from "../components/seo";
-import speed from "../images/speed.png";
+import "../layout.css";
+import SEO from "../seo";
+import speed from "../../images/speed.png";
 import loadable from "@loadable/component";
-import "../components/Background/fade-in.css";
-import accuracy from "../images/accuracy.png";
-import "../components/Layout/SiteWrapper.css";
-import humanerror from "../images/humanerror.png";
-import MainFooter from "../components/Footer/footer";
-import ParticlesBackground from "../components/Background/particles-background";
+import "../Background/fade-in.css";
+import accuracy from "../../images/accuracy.png";
+import "../Layout/SiteWrapper.css";
+import humanerror from "../../images/humanerror.png";
+import MainFooter from "../Footer/footer";
+import ParticlesBackground from "../Background/particles-background";
 
-const Header = loadable(() => import("../components/Header/Header.js"))
-const TripleColumn = loadable(() => import("../components/Layout/triplecolumn"))
-const SingleColumn = loadable(() => import("../components/Layout/singlecolumn"))
-const ReversePyramid = loadable(() => import("../components/Layout/reversepyramid"))
-const VideoContainer = loadable(() => import("../components/Layout/videocontainer"))
+const Header = loadable(() => import("../Header/Header.js"))
+const TripleColumn = loadable(() => import("../Layout/triplecolumn"))
+const SingleColumn = loadable(() => import("../Layout/singlecolumn"))
+const ReversePyramid = loadable(() => import("../Layout/reversepyramid"))
+const VideoContainer = loadable(() => import("../Layout/videocontainer"))
 
 const MobilePage = () => (
   <div class="fadeIn">
