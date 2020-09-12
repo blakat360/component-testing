@@ -12,9 +12,9 @@ import MainFooter from "../Footer/footer";
 import ParticlesBackground from "../Background/particles-background";
 
 const Header = loadable(() => import("../Header/Header.js"))
-const TripleColumn = loadable(() => import("../Layout/triplecolumn"))
-const ReversePyramid = loadable(() => import("../Layout/reversepyramid"))
-const VideoContainer = loadable(() => import("../Layout/videocontainer"))
+const TripleColumn = loadable(() => import("../Layout/triplecolumn.js"))
+const ReversePyramid = loadable(() => import("../Layout/reversepyramid.js"))
+const VideoContainer = loadable(() => import("../Layout/videocontainer.js"))
 
 
 const DesktopPage = () => (

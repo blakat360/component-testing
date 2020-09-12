@@ -12,10 +12,10 @@ import MainFooter from "../Footer/footer";
 import ParticlesBackground from "../Background/particles-background";
 
 const Header = loadable(() => import("../Header/Header.js"))
-const TripleColumn = loadable(() => import("../Layout/triplecolumn"))
-const SingleColumn = loadable(() => import("../Layout/singlecolumn"))
-const ReversePyramid = loadable(() => import("../Layout/reversepyramid"))
-const VideoContainer = loadable(() => import("../Layout/videocontainer"))
+const TripleColumn = loadable(() => import("../Layout/triplecolumn.js"))
+const SingleColumn = loadable(() => import("../Layout/singlecolumn.js"))
+const ReversePyramid = loadable(() => import("../Layout/reversepyramid.js"))
+const VideoContainer = loadable(() => import("../Layout/videocontainer.js"))
 
 const MobilePage = () => (
   <div class="fadeIn">
