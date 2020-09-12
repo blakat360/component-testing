@@ -17,12 +17,21 @@ const ParticlesBackground = ({ children }) => {
         <div style={particlesCanvas}>
         <Particles height={'100vh'} params={{
             "particles": {
+                "move": {
+                    "enable": true,
+                    "speed": 2,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                  },
                 "number": {
-                    "value": 200,
+                    "value": 150,
                     "density": {
                     enable: true,
                     value_area: 3000
-                    }
+                    },
                 },
                 "size": {
                     "value": 3

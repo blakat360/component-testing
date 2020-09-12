@@ -2,9 +2,10 @@ import "../layout.css"
 import React from "react";
 import "./reverse-pyramid.css";
 import "../Layout/SiteWrapper.css";
-import TripleColumn from "./triplecolumn";
-import DoubleColumn from "./doublecolumn";
+import loadable from "@loadable/component";
 
+const TripleColumn = loadable(() => import("../Layout/triplecolumn.js"))
+const DoubleColumn = loadable(() => import("../Layout/doublecolumn.js"))
 // Rows still need defining
 
 function ReversePyramid(props) {

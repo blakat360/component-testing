@@ -1,6 +1,8 @@
 import React from "react"
-import Desktop from "./landing-page-desktop";
-import Mobile from "./landing-page-mobile";
+import loadable from "@loadable/component";
+
+const Mobile = loadable(() => import("./landing-page-mobile"))
+const Desktop = loadable(() => import("./landing-page-desktop"))
 
 export default function getViewport(props) {
     var viewPortWidth;
