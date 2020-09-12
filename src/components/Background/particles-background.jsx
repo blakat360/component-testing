@@ -1,6 +1,6 @@
 import React from "react";
 import Particles from 'react-particles-js';
-import fadeIn from './fade-in.css';
+import './fade-in.css';
 
 let particlesCanvas = {
     position: 'fixed',
@@ -13,7 +13,7 @@ let particlesCanvas = {
 
 const ParticlesBackground = ({ children }) => {
     return (
-        <div class={fadeIn}>
+        <div class="fadeIn">
         <div style={particlesCanvas}>
         <Particles height={'100vh'} params={{
             "particles": {

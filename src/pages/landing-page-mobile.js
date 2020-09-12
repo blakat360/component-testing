@@ -4,19 +4,21 @@ import "../components/layout.css";
 import SEO from "../components/seo";
 import speed from "../images/speed.png";
 import loadable from "@loadable/component";
+import "../components/Background/fade-in.css";
 import accuracy from "../images/accuracy.png";
 import "../components/Layout/SiteWrapper.css";
 import humanerror from "../images/humanerror.png";
 import MainFooter from "../components/Footer/footer";
-import TripleColumn from "../components/Layout/triplecolumn";
-import SingleColumn from "../components/Layout/singlecolumn";
-import ReversePyramid from "../components/Layout/reversepyramid";
-import VideoContainer from "../components/Layout/videocontainer";
 import ParticlesBackground from "../components/Background/particles-background";
 
 const Header = loadable(() => import("../components/Header/Header.js"))
+const TripleColumn = loadable(() => import("../components/Layout/triplecolumn"))
+const SingleColumn = loadable(() => import("../components/Layout/singlecolumn"))
+const ReversePyramid = loadable(() => import("../components/Layout/reversepyramid"))
+const VideoContainer = loadable(() => import("../components/Layout/videocontainer"))
 
 const MobilePage = () => (
+  <div class="fadeIn">
   <div class="sitewrapper">
 
     <ParticlesBackground/>
@@ -53,7 +55,7 @@ const MobilePage = () => (
     <div class="footerRow">
       <MainFooter homepagelink="www.mesmerix.co.uk" companyname="Mesmerix"/>
     </div>
-
+    </div>
   </div>
 )
 
