@@ -11,7 +11,7 @@ import "../Layout/SiteWrapper.css";
 import humanerror from "../../images/humanerror.png";
 import MainFooter from "../Footer/footer";
 import ParticlesBackground from "../Background/particles-background";
-import SingleColumn from "../Layout/singlecolumn";
+
 
 
 const Header = loadable(() => import("../Header/Header.js"))
@@ -21,6 +21,8 @@ const VideoContainer = loadable(() => import("../Layout/videocontainer.js"))
 const TitledImage = loadable(() => import("../Layout/Titledimage.js"))
 const ArticleSlider = loadable(() => import("../Layout/Articleslider.js"))
 const TripleIconSet = loadable(() => import("../Layout/tripleiconset.js"))
+const SingleColumn = loadable(() => import("../Layout/singlecolumn.js"))
+const TextBlock = loadable(() => import("../Layout/textblock.js"))
 
 const DesktopPage = () => (
   <div class="fadeIn">
@@ -47,7 +49,7 @@ const DesktopPage = () => (
     <div class="row2">
 
         <ArticleSlider 
-        articleSliderHeight="50vh"
+        articleSliderHeight="35vh"
         articleSliderRow="--row2-h1"
         titles="desktopSlideText"
         slideonehead="Why has Industry 4.0 failed so far?"
@@ -67,9 +69,21 @@ const DesktopPage = () => (
         />
     </div>
     <div class="row3">
-      <SingleColumn 
+      <TextBlock
+      textblockheight="35vh"
+      textblockrow="--row3-h1"
+      headtype="desktopTextHeading"
+      bodytype="desktopTextBody"
+      blocktitle="Machine Verification 2.0 - The key to Industry 4.0 success"
+      mainblock="As we stand on the precipice of the fourth industrial revolution we can only imagine the advancements we will soon be making, 
+      however the barriers we must break through to achieve these stand just as tall. Our standards for quality control, 
+      production rate and data insights are rising every day, yet the driving force behind them, humanity, has remained the same for thousands of years. 
+      This is driving a huge gap in the knowledge and capabilities of people, a gap which could hold humanity back in its relentless pursuit of innovation."
+      />
+      {/* <SingleColumn 
       singlecolumn1height="45vh"
-      margintop="50vh"
+      mainwindowtype="singleColumn"
+      margintop="0vh"
       singlecolumnrow1="--row3-h1"
       headings="desktopTextHeading"
       bodytext="desktopTextBody"
@@ -79,7 +93,7 @@ const DesktopPage = () => (
       production rate and data insights are rising every day, yet the driving force behind them, humanity, has remained the same for thousands of years. 
       This is driving a huge gap in the knowledge and capabilities of people, a gap which could hold humanity back in its relentless pursuit of innovation.
       "
-      />
+      /> */}
     </div>
     <div class="row4">
       <TripleIconSet 

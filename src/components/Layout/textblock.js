@@ -11,6 +11,7 @@ function TextBlock(props) {
     let heightVar1 = props.textblockheight;
     let textblockrow = props.textblockrow;
     document.documentElement.style.setProperty(String(textblockrow), heightVar1);
+    document.documentElement.style.setProperty("--textblockheight1", heightVar1);
 
     return(
         <div class="textBlock">

@@ -1,5 +1,4 @@
 :root {
-    --margintop: 1vw;
     --borderstyle: var(--border-style);
     --titledImageH1: "";
 }
@@ -27,7 +26,6 @@
     justify-items: stretch;
     text-align: left;
     padding-left: 15vw;
-    margin-top: var(--margintop);
     color: var(--primary-text);
     border-style: var(--borderstyle);
     border-color: var(--border-color);
@@ -41,7 +39,6 @@
     align-items: center;
     justify-items: stretch;
     text-align: center;
-    margin-top: var(--margintop);
     border-style: var(--borderstyle);
     border-color: var(--border-color);
 }

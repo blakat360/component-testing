@@ -18,8 +18,7 @@
     justify-items: center;
     align-items: center;
     text-align: center;
-    margin-top: var(--margintop);
-    border-style: var(--borderstyle);
+    border-style: solid;
     border-color: var(--border-color);
 } 
 .singleColumnMobile {
@@ -43,7 +42,7 @@
     justify-content: center;
     align-content: center;
     align-items: center;
-    justify-items: stretch;
+    justify-items: center;
     text-align: center;
     margin-top: var(--margintop);
     color: var(--primary-text);

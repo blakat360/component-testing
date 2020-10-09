@@ -1,5 +1,4 @@
 :root {
-    --margintop: 1vw;
     --yamum: 000;
     --borderstyle: var(--border-style);
     --backgroundcolor: none;
@@ -8,13 +7,13 @@
     display: grid;
     position: relative;
     grid-template-columns: 32vw 32vw;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto auto;
     justify-content: center;
     justify-self: stretch;
-    align-content: stretch;
+    align-content: start;
     justify-items: stretch;
-    align-items: stretch;
-    border-style: var(--borderstyle);
+    align-items: start;
+    border-style: solid;
     border-color: var(--border-color);
 
 } 
@@ -24,12 +23,11 @@
     position: relative;
     justify-content: center;
     align-content: stretch;
-    align-items: stretch;
-    justify-items: normal;
-    margin-top: var(--margintop);
+    align-items: start;
+    justify-items: center;
     padding-left: 2vw;
     color: var(--primary-text);
-    border-style: var(--borderstyle);
+    border-style: solid;
     border-color: var(--border-color);
     background-color: var(--backgroundcolor);
 }
@@ -41,10 +39,9 @@
     align-content: stretch;
     align-items: stretch;
     justify-items: normal;
-    margin-top: var(--margintop);
     padding-right: 2vw;
     color: var(--slide-text);
-    border-style: var(--borderstyle);
+    border-style: solid;
     border-color: var(--border-color);
     background-color: var(--backgroundcolor);
 }

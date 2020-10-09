@@ -1,18 +1,19 @@
 :root {
     --borderstyle: var(--border-style);
+    --textblockheight1: ;
 }
 .textBlock {
     display: grid;
     position: relative;
     grid-template-columns: 80vw;
     grid-template-rows: auto;
-    justify-content: center;
-    justify-self: center;
+    justify-content: stretch;
+    justify-self: stretch;
     align-content: center;
-    justify-items: center;
+    justify-items: stretch;
     align-items: center;
     text-align: center;
-    border-style: var(--borderstyle);
+    border-style: solid;
     border-color: var(--border-color);
 } 
 
