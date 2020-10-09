@@ -1,5 +1,6 @@
 :root {
     --margintop: 1vw;
+    --yamum: 000;
     --borderstyle: var(--border-style);
     --backgroundcolor: none;
 }
