@@ -54,9 +54,10 @@
     grid-template-rows: auto auto;
     justify-content: center;
     justify-self: stretch;
-    align-content: stretch;
+    align-content: center;
     justify-items: stretch;
-    align-items: stretch;
+    align-items: center;
+    text-align: center;
     border-style: var(--borderstyle);
     border-color: var(--border-color);
 
@@ -66,10 +67,9 @@
     grid-column: 1 / 1;
     position: relative;
     justify-content: center;
-    align-content: stretch;
-    align-items: stretch;
+    align-content: center;
+    align-items: center;
     justify-items: normal;
-    margin-top: var(--margintop);
     padding-left: 2vw;
     color: var(--primary-text);
     border-style: var(--borderstyle);
@@ -83,8 +83,7 @@
     justify-content: center;
     align-content: stretch;
     align-items: stretch;
-    justify-items: normal;
-    margin-top: var(--margintop);
+    justify-items: center;
     padding-right: 2vw;
     color: var(--slide-text);
     border-style: var(--borderstyle);

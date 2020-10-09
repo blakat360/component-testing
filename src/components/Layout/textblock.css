@@ -1,0 +1,31 @@
+:root {
+    --borderstyle: var(--border-style);
+}
+.textBlock {
+    display: grid;
+    position: relative;
+    grid-template-columns: 80vw;
+    grid-template-rows: auto;
+    justify-content: center;
+    justify-self: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    border-style: var(--borderstyle);
+    border-color: var(--border-color);
+} 
+
+.mainBlock {
+    grid-row: 1 / 1;
+    grid-column: 1 / 1;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: stretch;
+    text-align: center;
+    color: var(--primary-text);
+    border-style: var(--borderstyle);
+    border-color: var(--border-color);
+}

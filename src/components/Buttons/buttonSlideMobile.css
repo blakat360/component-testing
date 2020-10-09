@@ -1,0 +1,14 @@
+.buttonslidemobile {
+    color: var(--primary-text);
+    border: none;
+    font-size: 2.5vw;
+    font-family: var(--font);
+    text-align: center;
+    margin-top: -2vh;
+    z-index: 1;
+    background-color: #00000000;
+    transition-duration: 0.4s;
+ }
+.buttonslidemobile:hover {
+    color: var(--primary-text-highlight);
+    } 

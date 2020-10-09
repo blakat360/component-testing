@@ -1,13 +1,17 @@
 :root {
-    --margintop: 0vw;
+    --margintop: 20vh;
     --borderstyle: var(--border-style);
     --topmargin: "";
+    --singlecolumnh1: "";
+    --singlecolumnh2: "";
+    --singlecolumnh3: "";
+    --singlecolumnh4: "";
 }
 .singleColumn {
     display: grid;
     position: relative;
     grid-template-columns: 80vw;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: var(--singlecolumnh1) var(--singlecolumnh2) var(--singlecolumnh3) var(--singlecolumnh4);
     justify-content: center;
     justify-self: center;
     align-content: center;

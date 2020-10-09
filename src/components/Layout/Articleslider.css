@@ -6,7 +6,7 @@
 .articleSlider {
     display: grid;
     position: relative;
-    grid-template-columns: 85vw;
+    grid-template-columns: 90vw;
     grid-template-rows: var(--articleSliderH1);
     justify-content: center;
     justify-self: stretch;
