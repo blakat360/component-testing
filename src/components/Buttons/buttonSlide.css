@@ -1,9 +1,9 @@
- .buttondesktop {
+.buttonslide {
     color: var(--primary-text);
     border: none;
     border-color: white;
-    padding:  0vw 0vw;
-    font-size: 1.5vw;
+    margin-left: -0.35vw;
+    font-size: 1.2vw;
     font-family: var(--font);
     text-align: start;
     display: inline-block;
@@ -11,6 +11,6 @@
     background-color: #00000000;
     transition-duration: 0.4s;
  }
-.buttondesktop:hover {
+.buttonslide:hover {
     color: var(--primary-text-highlight);
     }

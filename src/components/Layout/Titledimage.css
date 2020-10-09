@@ -1,0 +1,47 @@
+:root {
+    --margintop: 1vw;
+    --borderstyle: var(--border-style);
+    --titledImageH1: "";
+}
+.titledImage {
+    display: grid;
+    position: relative;
+    grid-template-columns: 42.5vw 42.5vw;
+    grid-template-rows: var(--titledImageH1);
+    column-gap: 5vw;
+    justify-content: center;
+    justify-self: center;
+    align-content: stretch;
+    justify-items: center;
+    align-items: center;
+    border-style: var(--borderstyle);
+    border-color: var(--border-color);
+} 
+.titleText {
+    grid-row: 1 / 1;
+    grid-column: 1 / 1;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: stretch;
+    text-align: left;
+    padding-left: 15vw;
+    margin-top: var(--margintop);
+    color: var(--primary-text);
+    border-style: var(--borderstyle);
+    border-color: var(--border-color);
+}
+.imageblock {
+    grid-row: 1 / 1;
+    grid-column: 2 / 2;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: stretch;
+    text-align: center;
+    margin-top: var(--margintop);
+    border-style: var(--borderstyle);
+    border-color: var(--border-color);
+}

@@ -1,6 +1,6 @@
 .footer {
     grid-row: 1 / 1;
-    grid-column: 1 / 10;
+    grid-column: 1 / 1;
     position: relative;
     justify-items: center;
     justify-self: center;

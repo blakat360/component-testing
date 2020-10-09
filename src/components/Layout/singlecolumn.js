@@ -12,6 +12,7 @@ function SingleColumn(props) {
     let heightVar2 = props.singlecolumn2height;
     let heightVar3 = props.singlecolumn3height;
     let heightVar4 = props.singlecolumn4height;
+    let topmargin = props.margintop;
     let singlecolumnrow1 = props.singlecolumnrow1;
     let singlecolumnrow2 = props.singlecolumnrow2;
     let singlecolumnrow3 = props.singlecolumnrow3;
@@ -20,18 +21,15 @@ function SingleColumn(props) {
     document.documentElement.style.setProperty(String(singlecolumnrow2), heightVar2);
     document.documentElement.style.setProperty(String(singlecolumnrow3), heightVar3);
     document.documentElement.style.setProperty(String(singlecolumnrow4), heightVar4);
-    document.documentElement.style.setProperty("--singlecolumnh1", heightVar1);
-    document.documentElement.style.setProperty("--singlecolumnh2", heightVar2);
-    document.documentElement.style.setProperty("--singlecolumnh3", heightVar3);
-    document.documentElement.style.setProperty("--singlecolumnh4", heightVar4);
+    document.documentElement.style.setProperty("--margintop", topmargin);
     return(
-        <div class="singleColumn">
+        <div class={props.mainwindowtype}>
             <div class='firstRow'>
                 <img src={props.imgfirstrow} alt={props.imgfirstrowalt} height={props.imgfirstrowheight}></img>
-                <text class={props.headings}>{props.firstrowtitle}</text>
+                <text class={props.headings}>{props.firstrowtitle}<br/><br/></text>
                 <p class={props.bodytext}>{props.firstrow}</p>  
             </div>
-            <div class='secondRow'>
+            {/* <div class='secondRow'>
                 <img src={props.imgsecondrow} alt={props.imgsecondrowalt} height={props.imgsecondrowheight}></img>
                 <text class={props.headings}>{props.secondrowtitle}</text>
                 <p class={props.bodytext}>{props.secondrow}</p>
@@ -45,7 +43,7 @@ function SingleColumn(props) {
                 <img src={props.imgfourthrow} alt={props.imgfourthrowalt} height={props.imgfourthrowheight}></img>
                 <text class={props.headings}>{props.fourthrowtitle}</text>
                 <p class={props.bodytext}>{props.fourthrow}</p>  
-            </div>
+            </div> */}
         </div>
     );
     

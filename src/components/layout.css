@@ -5,7 +5,9 @@
   --secondary-color: #a1816b;
   --tertiary-color: #a17c57;
   --primary-text: white;
+  --primary-text-highlight: #8D8D8D;
   --secondary-text: white;
+  --slide-text: white;
   --border-style: none;
   --border-color: white;
   --animation-color: #8D8D8D;
@@ -13,8 +15,8 @@
   --font-heavy: Ripple-heavy;
   --animate: 5s;
   --button-border-color: white;
-  --mobile-heading: 5.5vw;
-  --mobile-body: 2.5vw;
+  --mobile-heading: 8.5vw;
+  --mobile-body: 4.5vw;
   --mobile-heading-weight: 800;
   --desktop-heading: 3vw;
   --desktop-body: 1.5vw;
@@ -36,6 +38,24 @@
   font-size: var(--mobile-body);
   line-height: 1.1;
 }
+.mobileSlideTextHead {
+  color: var(--primary-text);
+  font-family: var(--font);
+  font-weight: var(--mobile-heading-weight);
+  text-rendering: optimizeLegibility;
+  font-size: 4vw;
+  text-align: center;
+  line-height: 1.1;
+}
+.mobileSlideTextBody {
+  color: var(--primary-text);
+  font-family: var(--font);
+  font-weight: var(--mobile-heading-weight);
+  text-rendering: optimizeLegibility;
+  font-size: 2vw;
+  text-align: center;
+  line-height: 1.1;
+}
 .desktopTextHeading {
   color: var(--primary-text);
   font-family: var(--font);
@@ -50,6 +70,30 @@
   font-weight: 400;
   text-rendering: optimizeLegibility;
   font-size: var(--desktop-body);
+  line-height: 1.1;
+}
+.desktopTextLink {
+  color: var(--primary-text);
+  font-family: var(--font);
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  font-size: 2.2vh;
+  line-height: 1.1;
+}
+.desktopSlideTextHead {
+  color: var(--slide-text);
+  font-family: var(--font);
+  font-weight: var(--desktop-heading-weight);
+  text-rendering: optimizeLegibility;
+  font-size: 2vw;
+  line-height: 1.1;
+}
+.desktopSlideTextBody {
+  color: var(--slide-text);
+  font-family: var(--font);
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  font-size: 1.2vw;
   line-height: 1.1;
 }
 html {

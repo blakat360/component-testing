@@ -33,13 +33,15 @@
     align-content: start;
     justify-items: start;
     align-items: start;
+    padding-left: 2vw;
     padding-top: 1vw;
     border-style: none;
     border-color: var(--border-color);
 }
-.buttonContainerDesktop {
+
+.homeButtonDesktop {
     grid-row: 1;
-    grid-column: 2 / 2;
+    grid-column: 3 / 3;
     position: relative;
     justify-self: end;
     align-content: start;
@@ -49,4 +51,111 @@
     border-style: var(--border-style);
     border-color: var(--border-color);
 }
-
+.solutionsButtonDesktop {
+    grid-row: 1;
+    grid-column: 4 / 4;
+    position: relative;
+    justify-self: end;
+    align-content: start;
+    justify-items: start;
+    align-items: start;
+    padding: 1vw 1vw;
+    border-style: var(--border-style);
+    border-color: var(--border-color);
+}
+.resourcesButtonDesktop {
+    grid-row: 1;
+    grid-column: 5 / 5;
+    position: relative;
+    justify-self: end;
+    align-content: start;
+    justify-items: start;
+    align-items: start;
+    padding: 1vw 1vw;
+    border-style: var(--border-style);
+    border-color: var(--border-color);
+}
+.aboutButtonDesktop {
+    grid-row: 1;
+    grid-column: 6 / 6;
+    position: relative;
+    justify-self: end;
+    align-content: start;
+    justify-items: start;
+    align-items: start;
+    padding: 1vw 1vw;
+    border-style: var(--border-style);
+    border-color: var(--border-color);
+}
+.contactButtonDesktop {
+    grid-row: 1;
+    grid-column: 7 / 7;
+    position: relative;
+    justify-self: end;
+    align-content: start;
+    justify-items: start;
+    align-items: start;
+    padding: 1vw 1vw;
+    border-style: var(--border-style);
+    border-color: var(--border-color);
+}
+.homeButtonMobile {
+    grid-row: 1;
+    grid-column: 3 / 3;
+    position: relative;
+    justify-self: end;
+    align-content: start;
+    justify-items: start;
+    align-items: start;
+    padding: 2vw 1vw;
+    border-style: var(--border-style);
+    border-color: var(--border-color);
+}
+.solutionsButtonMobile {
+    grid-row: 1;
+    grid-column: 4 / 4;
+    position: relative;
+    justify-self: end;
+    align-content: start;
+    justify-items: start;
+    align-items: start;
+    padding: 2vw 1vw;
+    border-style: var(--border-style);
+    border-color: var(--border-color);
+}
+.resourcesButtonMobile {
+    grid-row: 1;
+    grid-column: 5 / 5;
+    position: relative;
+    justify-self: end;
+    align-content: start;
+    justify-items: start;
+    align-items: start;
+    padding: 2vw 1vw;
+    border-style: var(--border-style);
+    border-color: var(--border-color);
+}
+.aboutButtonMobile {
+    grid-row: 1;
+    grid-column: 6 / 6;
+    position: relative;
+    justify-self: end;
+    align-content: start;
+    justify-items: start;
+    align-items: start;
+    padding: 2vw 1vw;
+    border-style: var(--border-style);
+    border-color: var(--border-color);
+}
+.contactButtonMobile {
+    grid-row: 1;
+    grid-column: 7 / 7;
+    position: relative;
+    justify-self: end;
+    align-content: start;
+    justify-items: start;
+    align-items: start;
+    padding: 2vw 1vw;
+    border-style: var(--border-style);
+    border-color: var(--border-color);
+}
