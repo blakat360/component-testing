@@ -11,7 +11,7 @@ import "../Buttons/buttonSlideMobile.css";
 
 function CarouselItem(props) {
     return(
-        <div class={props.carouselItemClass}>
+        <div class={props.caroItemClass}>
             <div class={props.caroImageClass}>
                 <img src={props.itemImage} width="450vw" href="/index/" alt="Logo"></img>
             </div>

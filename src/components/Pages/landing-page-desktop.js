@@ -49,7 +49,7 @@ const DesktopPage = () => (
     <div class="row2">
 
         <ArticleSlider 
-        articleSliderHeight="35vh"
+        articleSliderHeight="40vh"
         articleSliderRow="--row2-h1"
         titles="desktopSlideText"
         slideonehead="Why has Industry 4.0 failed so far?"
@@ -70,7 +70,7 @@ const DesktopPage = () => (
     </div>
     <div class="row3">
       <TextBlock
-      textblockheight="35vh"
+      textblockheight="45vh"
       textblockrow="--row3-h1"
       headtype="desktopTextHeading"
       bodytype="desktopTextBody"

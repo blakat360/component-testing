@@ -8,10 +8,10 @@ import "../Layout/SiteWrapper.css";
 // The rows that can be defined are --row1, --row2, --row3, --row4, --row5, these all have sub dimensions in the style: --row1-h1
 
 function TextBlock(props) {
-    let heightVar1 = props.textblockheight;
+    let textblockh = props.textblockheight;
     let textblockrow = props.textblockrow;
-    document.documentElement.style.setProperty(String(textblockrow), heightVar1);
-    document.documentElement.style.setProperty("--textblockheight1", heightVar1);
+    document.documentElement.style.setProperty(String(textblockrow), textblockh);
+    document.documentElement.style.setProperty("--textblockheight1", textblockh);
 
     return(
         <div class="textBlock">

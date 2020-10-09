@@ -1,19 +1,18 @@
 :root {
-    --borderstyle: var(--border-style);
-    --textblockheight1: ;
+    --textblockheight1: "";
 }
 .textBlock {
     display: grid;
     position: relative;
     grid-template-columns: 80vw;
-    grid-template-rows: auto;
-    justify-content: stretch;
-    justify-self: stretch;
+    grid-template-rows: var(--textblockheight1);
+    justify-content: center;
+    justify-self: center;
     align-content: center;
     justify-items: stretch;
     align-items: center;
     text-align: center;
-    border-style: solid;
+    border-style: none;
     border-color: var(--border-color);
 } 
 
@@ -27,6 +26,6 @@
     justify-items: stretch;
     text-align: center;
     color: var(--primary-text);
-    border-style: var(--borderstyle);
+    border-style: none;
     border-color: var(--border-color);
 }

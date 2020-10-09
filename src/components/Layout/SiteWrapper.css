@@ -81,10 +81,10 @@
     grid-template-rows: calc(var(--row2-h1) + var(--row2-h2) + var(--row2-h3) + var(--row2-h4) + var(--row2-h5));
     justify-content: center;
     justify-self: stretch;
-    align-content: stretch;
+    align-content: start;
     justify-items: stretch;
     align-items: start;
-    border-style: var(--borderstyle);
+    border-style: solid;
     border-color: var(--border-color);
 } 
 .row3 {
@@ -99,7 +99,7 @@
     align-content: start;
     justify-items: stretch;
     align-items: center;
-    border-style: var(--border-style);
+    border-style: none;
     border-color: var(--border-color);
 } 
 .row4 {
