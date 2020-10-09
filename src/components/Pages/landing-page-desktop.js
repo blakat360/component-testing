@@ -47,7 +47,7 @@ const DesktopPage = () => (
     <div class="row2">
 
         <ArticleSlider 
-        articleSliderHeight="40vh"
+        articleSliderHeight="50vh"
         articleSliderRow="--row2-h1"
         titles="desktopSlideText"
         slideonehead="Why has Industry 4.0 failed so far?"
@@ -59,6 +59,11 @@ const DesktopPage = () => (
         slidethreebody="Could the manufacturing industry's struggle with digital transformation be its greatest downfall? A look into the big data issues 
         holding us back from Industry 4.0 and their solutions."
         buttontype="buttonslide"
+        carouselItemClass="carouselItem"
+        caroImageClass="imageBlock"
+        caroTextClass="textBlock"
+        headerTextType="desktopSlideTextHead"
+        bodyTextType="desktopSlideTextBody"
         />
     </div>
     <div class="row3">
